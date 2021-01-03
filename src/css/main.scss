@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('../img/pattern.png') repeat;
+    background-size: 300px;
+
+    .hello-world {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+}
