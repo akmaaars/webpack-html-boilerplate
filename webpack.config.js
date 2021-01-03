@@ -58,8 +58,10 @@ module.exports = {
                     }
                 ]
             },
-            { test: /\.js$/, use: ['babel-loader'] },
-          
+            { 
+                test: /\.js$/, 
+                use: ['babel-loader'], 
+                exclude: '/node_modules/' },
             { 
                 test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
                 use: [
