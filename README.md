@@ -46,7 +46,6 @@ npm run build
 - [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Load SCSS and compile to CSS
   - [`node-sass`](https://github.com/sass/node-sass) - Node Sass
 - [`postcss-loader`](https://webpack.js.org/loaders/postcss-loader/) - Process CSS with PostCSS
-  - [`postcss-preset-env`](https://www.npmjs.com/package/postcss-preset-env) - Sensible defaults for PostCSS
 - [`css-loader`](https://webpack.js.org/loaders/css-loader/) - Resolve CSS imports
 - [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Inject CSS into the DOM
 
@@ -56,7 +55,6 @@ npm run build
 - [`copy-webpack-plugin`](https://github.com/webpack-contrib/copy-webpack-plugin) - Copy files to build directory
 - [`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin) - Generate HTML files from template
 - [`mini-css-extract-plugin`](https://github.com/webpack-contrib/mini-css-extract-plugin) - Extract CSS into separate files
-- [`css-minimizer-webpack-plugin`](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/) - Optimize and minimize CSS assets
 
 ## Author
 
