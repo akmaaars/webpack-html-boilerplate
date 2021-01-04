@@ -121,7 +121,7 @@ module.exports = {
             jQuery: 'jquery'
         }),
         new MiniCssExtractPlugin({
-            filename: isProduction ? "[name]-[hash].css" : '[name].css'
+            filename: isProduction ? "css/[name]-[hash].css" : 'css/[name].css'
         }),
     ]
 }
