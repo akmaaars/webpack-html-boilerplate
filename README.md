@@ -46,6 +46,8 @@ npm run build
 - [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Load SCSS and compile to CSS
   - [`node-sass`](https://github.com/sass/node-sass) - Node Sass
 - [`postcss-loader`](https://webpack.js.org/loaders/postcss-loader/) - Process CSS with PostCSS
+  - [`autoprefixer`](https://github.com/postcss/autoprefixer) - prefixes to CSS rules
+  - [`postcss-import`](https://github.com/postcss/autoprefixer/issues/1254) - enable @import support
 - [`css-loader`](https://webpack.js.org/loaders/css-loader/) - Resolve CSS imports
 - [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Inject CSS into the DOM
 
