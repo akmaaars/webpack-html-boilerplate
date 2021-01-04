@@ -32,7 +32,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.(scss|css)$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     {
@@ -51,9 +51,6 @@ module.exports = {
                         loader: 'postcss-loader',
                         options: {
                             sourceMap: true,
-                            postcssOptions: {
-                            plugins: [["autoprefixer"]]
-                            },
                         }
                     }
                 ]
@@ -124,7 +121,7 @@ module.exports = {
             jQuery: 'jquery'
         }),
         new MiniCssExtractPlugin({
-            filename: isProduction ? "css/[name]-[hash].css" : 'css/[name].css'
+            filename: isProduction ? "[name]-[hash].css" : '[name].css'
         }),
     ]
 }
