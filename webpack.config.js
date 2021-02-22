@@ -60,7 +60,7 @@ module.exports = {
                 use: ['babel-loader'], 
                 exclude: '/node_modules/' },
             { 
-                test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+                test: /\.(svg|png|jpg|gif|webp|avif|ico)$/,
                 use: [
                     {
                     loader: 'file-loader',
@@ -73,7 +73,7 @@ module.exports = {
             },
 
             {
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                 {
                     loader: 'file-loader',
