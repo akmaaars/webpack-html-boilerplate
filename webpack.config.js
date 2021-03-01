@@ -97,6 +97,11 @@ module.exports = {
                     to: 'public',
                     noErrorOnMissing: true,
                 },
+                {
+                    from: path.resolve(__dirname, './src/robots.txt'),
+                    to: 'robots.txt',
+                    noErrorOnMissing: true,
+                }
             ],
         }),
         new HtmlWebpackPlugin({
