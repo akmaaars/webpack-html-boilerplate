@@ -108,6 +108,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'index.html'),
             title: 'Webpack simple boilerplate with jquery and sass',
+            description: 'Webpack simple boilerplate with jquery and sass',
             meta: {
                 'description': { name: 'description', contnet: 'Enter your description here' },
                 'keyword': { name: 'keywords', content: 'webpack, babel, jquery, sass, autoprefixer' },
