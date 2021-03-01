@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="description" content="Комплексное продвижение вашего сайта">
+
+    <link rel="icon" href="<%= require('/src/img/favicons/favicon.ico').default %>">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= require('/src/img/favicons/apple-touch-icon.png').default %>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= require('/src/img/favicons/favicon-32x32.png').default %>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= require('/src/img/favicons/favicon-16x16.png').default %>">
+    <link rel="icon" type="image/svg+xml" href="<%= require('/src/img/favicons/favicon.svg').default %>">
+
 </head>
 <body>
     <main class="hello-world">

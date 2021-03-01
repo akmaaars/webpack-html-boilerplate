@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+var WebpackPwaManifest = require('webpack-pwa-manifest')
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -128,5 +129,22 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: isProduction ? "css/[name]-[hash].css" : 'css/[name].css'
         }),
+        new WebpackPwaManifest({
+            name: 'Webpack simple boilerplate with jquery and sass',
+            short_name: 'Webpack simple boilerplate',
+            description: 'Webpack simple boilerplate with jquery and sass',
+            background_color: '#ffffff',
+            crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+            icons: [
+              {
+                src: path.resolve('./src/img/favicons/android-chrome-192x192.png'),
+                sizes: [192]
+              },
+              {
+                src: path.resolve('./src/img/favicons/android-chrome-512x512.png'),
+                sizes: [512]
+              }
+            ]
+        })
     ]
 }
